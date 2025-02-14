@@ -464,12 +464,20 @@
             .then(function(response) {
                 console.log("Correo enviado con éxito", response);
 
-                // 🔹 Enviar notificación por WhatsApp de forma automática
-                let whatsappMessage = `📩 *Nuevo mensaje desde la web*:\n\n📛 *Nombre:* ${nombre}\n📧 *Email:* ${email}\n📞 *Teléfono:* ${telefono}\n💬 *Mensaje:* ${mensaje}`;
-                let whatsappUrl = `https://api.whatsapp.com/send?phone=50767315540&text=${encodeURIComponent(whatsappMessage)}`;
+                // 🔹 Enviar notificación por WhatsApp usando CallMeBot API
+                let whatsappMessage = `📩 Nuevo mensaje desde la web:\n\n📛 Nombre: ${nombre}\n📧 Email: ${email}\n📞 Teléfono: ${telefono}\n💬 Mensaje: ${mensaje}`;
+                let apiUrl = `https://api.callmebot.com/whatsapp.php?phone=50767315540&text=${encodeURIComponent(whatsappMessage)}&apikey=7020162`;
 
-                // Abrir WhatsApp en una nueva pestaña automáticamente
-                window.open(whatsappUrl, "_blank");
+                // Hacer la solicitud a la API de CallMeBot
+                fetch(apiUrl)
+                    .then(response => {
+                        if (response.ok) {
+                            console.log("Mensaje de WhatsApp enviado con éxito");
+                        } else {
+                            console.error("Error al enviar el mensaje de WhatsApp");
+                        }
+                    })
+                    .catch(error => console.error("Error en la solicitud de WhatsApp:", error));
 
                 alert("Tu mensaje ha sido enviado con éxito. Te contactaremos pronto.");
                 
