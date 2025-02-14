@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicio profesional de reparación de consolas, PC, laptops y soporte IT empresarial en Panamá">
+    <title>Reppair Panama - Reparación y Soporte Tecnológico</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">Reppair Panama</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="text-gray-600 hover:text-red-500">Inicio</a>
+                    <a href="#servicios" class="text-gray-600 hover:text-red-500">Servicios</a>
+                    <a href="#planes" class="text-gray-600 hover:text-red-500">Planes IT</a>
+                    <a href="#nosotros" class="text-gray-600 hover:text-red-500">Nosotros</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-red-500">Contacto</a>
+                </div>
+                <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700">
+                    Contactar Ahora
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 pb-12 bg-gradient-to-r from-red-600 to-red-800">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <img src="images/tech-support.jpg" alt="Tech Support" class="mx-auto mb-8 float-animation">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                Expertos en Reparación Tecnológica
+            </h1>
+            <p class="text-xl text-white mb-8">
+                Tu solución confiable en reparación de consolas, PC, laptops y soporte IT empresarial en Panamá
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-white text-red-600 px-8 py-3 rounded-full hover:bg-gray-100">
+                    Ver Servicios
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-red-600">
+                    Contactar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1: Consolas -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="images/console.jpg" alt="Consolas" class="mx-auto mb-4 pulse-animation">
+                    <div class="text-4xl text-red-600 mb-4">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Reparación de Consolas</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• PlayStation (PS3, PS4, PS5)</li>
+                        <li>• Xbox (360, One, Series)</li>
+                        <li>• Nintendo Switch</li>
+                        <li>• Diagnóstico gratuito</li>
+                    </ul>
+                    <div class="space-y-3">
+                        <button class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
+                            Solicitar Diagnóstico
+                        </button>
+                        <button class="w-full border border-red-600 text-red-600 py-2 rounded-lg hover:bg-red-50">
+                            Ver Lista de Precios
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: PC/Laptops -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="images/laptop.jpg" alt="PC/Laptops" class="mx-auto mb-4 float-animation">
+                    <div class="text-4xl text-red-600 mb-4">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Reparación de PC y Laptops</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Problemas de hardware</li>
+                        <li>• Problemas de software</li>
+                        <li>• Actualización de componentes</li>
+                        <li>• Mantenimiento preventivo</li>
+                    </ul>
+                    <div class="space-y-3">
+                        <button class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
+                            Agendar Revisión
+                        </button>
+                        <button class="w-full border border-red-600 text-red-600 py-2 rounded-lg hover:bg-red-50">
+                            Cotizar Servicio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Soporte IT -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="images/it-support.jpg" alt="Soporte IT" class="mx-auto mb-4 pulse-animation">
+                    <div class="text-4xl text-red-600 mb-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Soporte IT Empresarial</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Mantenimiento de redes</li>
+                        <li>• Soporte técnico remoto</li>
+                        <li>• Seguridad informática</li>
+                        <li>• Consultoría IT</li>
+                    </ul>
+                    <div class="space-y-3">
+                        <button class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
+                            Ver Planes Mensuales
+                        </button>
+                        <button class="w-full border border-red-600 text-red-600 py-2 rounded-lg hover:bg-red-50">
+                            Solicitar Consulta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes de Soporte IT -->
+    <section id="planes" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Planes de Soporte IT</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plan Básico -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-8">
+                        <img src="images/basic-plan.jpg" alt="Plan Básico" class="mx-auto mb-4 pulse-animation">
+                        <h3 class="text-2xl font-bold text-center mb-4">Reppair Básico</h3>
+                        <div class="text-center text-red-600 text-4xl font-bold mb-6">
+                            $374<span class="text-gray-500 text-lg">/mes</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Soporte remoto 8x5
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Hasta 10 dispositivos
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Mantenimiento preventivo mensual
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Respuesta en 4 horas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50">
+                        <button class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700">
+                            Contratar Plan Básico
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Plan Intermedio -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform scale-105 border-2 border-red-600">
+                    <div class="bg-red-600 text-white text-center py-2">
+                        <span class="text-sm font-semibold">MÁS POPULAR</span>
+                    </div>
+                    <div class="p-8">
+                        <img src="images/intermediate-plan.jpg" alt="Plan Intermedio" class="mx-auto mb-4 float-animation">
+                        <h3 class="text-2xl font-bold text-center mb-4">Reppair Intermedio</h3>
+                        <div class="text-center text-red-600 text-4xl font-bold mb-6">
+                            $624<span class="text-gray-500 text-lg">/mes</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Soporte remoto 12x6
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Hasta 25 dispositivos
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Mantenimiento preventivo quincenal
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Respuesta en 2 horas
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Seguridad básica incluida
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50">
+                        <button class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700">
+                            Contratar Plan Intermedio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Plan Extreme -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-8">
+                        <img src="images/extreme-plan.jpg" alt="Plan Extreme" class="mx-auto mb-4 pulse-animation">
+                        <h3 class="text-2xl font-bold text-center mb-4">Reppair Extreme</h3>
+                        <div class="text-center text-red-600 text-4xl font-bold mb-6">
+                            $1,124<span class="text-gray-500 text-lg">/mes</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Soporte 24/7
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Dispositivos ilimitados
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Mantenimiento preventivo semanal
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Respuesta inmediata
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Seguridad avanzada incluida
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Consultoría IT mensual
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50">
+                        <button class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700">
+                            Contratar Plan Extreme
+                        </button>
+                    </div>
+                </div>
+            </div>
