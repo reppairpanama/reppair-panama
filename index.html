@@ -1,77 +1,187 @@
-<!-- Sección de Testimonios -->
-<section class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Lo que dicen nuestros clientes</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Testimonio 1 -->
-            <div class="bg-gray-50 rounded-lg shadow-lg p-8">
-                <div class="flex justify-center mb-4">
-                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                        <i class="fas fa-user text-2xl text-white"></i>
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head section remains the same -->
+<head>
+    <!-- Previous head content -->
+</head>
+<body class="bg-gray-50">
+    <!-- Header section updated with smooth scroll -->
+    <header class="bg-white shadow-md fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">Reppair Panama</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="text-gray-600 hover:text-red-500">Inicio</a>
+                    <a href="#servicios" class="text-gray-600 hover:text-red-500">Servicios</a>
+                    <a href="#planes" class="text-gray-600 hover:text-red-500">Planes IT</a>
+                    <a href="#nosotros" class="text-gray-600 hover:text-red-500">Nosotros</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-red-500">Contacto</a>
+                </div>
+                <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700" onclick="window.location.href='https://wa.me/+507XXXXXXXX'">
+                    Contactar Ahora
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Previous sections remain the same: Hero, Servicios, Planes -->
+    
+    <!-- Nueva sección: Nosotros -->
+    <section id="nosotros" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Sobre Nosotros</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Misión -->
+                <div class="bg-gray-50 rounded-lg shadow-lg p-8">
+                    <div class="text-4xl text-red-600 mb-4">
+                        <i class="fas fa-bullseye"></i>
                     </div>
+                    <h3 class="text-2xl font-bold mb-6">Nuestra Misión</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        En Reppair Panama, nuestra misión es proporcionar soluciones tecnológicas integrales y de alta calidad, 
+                        garantizando la satisfacción de nuestros clientes a través de un servicio profesional, oportuno y 
+                        personalizado.
+                    </p>
                 </div>
-                <div class="text-center mb-4">
-                    <h3 class="font-bold text-lg">Carlos Martínez</h3>
-                    <p class="text-red-600">Reparación de PS5</p>
-                </div>
-                <p class="text-gray-600 text-center">
-                    "Excelente servicio. Repararon mi PS5 en tiempo récord y ahora funciona perfectamente. El servicio al cliente fue excepcional."
-                </p>
-                <div class="flex justify-center mt-4 text-yellow-400">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+
+                <!-- Visión -->
+                <div class="bg-gray-50 rounded-lg shadow-lg p-8">
+                    <div class="text-4xl text-red-600 mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6">Nuestra Visión</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Ser reconocidos como la empresa líder en soluciones tecnológicas en Panamá, destacándonos por 
+                        nuestra excelencia en el servicio, innovación constante y compromiso con el desarrollo tecnológico 
+                        del país.
+                    </p>
                 </div>
             </div>
 
-            <!-- Testimonio 2 -->
-            <div class="bg-gray-50 rounded-lg shadow-lg p-8">
-                <div class="flex justify-center mb-4">
-                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                        <i class="fas fa-user text-2xl text-white"></i>
+            <!-- Valores -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-center mb-8">Nuestros Valores</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                        <i class="fas fa-star text-3xl text-red-600 mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Excelencia</h4>
+                        <p class="text-gray-600">Buscamos la perfección en cada servicio que ofrecemos.</p>
                     </div>
-                </div>
-                <div class="text-center mb-4">
-                    <h3 class="font-bold text-lg">María González</h3>
-                    <p class="text-red-600">Soporte IT Empresarial</p>
-                </div>
-                <p class="text-gray-600 text-center">
-                    "Desde que contratamos sus servicios de soporte IT, nuestra empresa ha mejorado significativamente su eficiencia tecnológica. ¡Altamente recomendados!"
-                </p>
-                <div class="flex justify-center mt-4 text-yellow-400">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-
-            <!-- Testimonio 3 -->
-            <div class="bg-gray-50 rounded-lg shadow-lg p-8">
-                <div class="flex justify-center mb-4">
-                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                        <i class="fas fa-user text-2xl text-white"></i>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                        <i class="fas fa-handshake text-3xl text-red-600 mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Integridad</h4>
+                        <p class="text-gray-600">Actuamos con honestidad y transparencia en todo momento.</p>
                     </div>
-                </div>
-                <div class="text-center mb-4">
-                    <h3 class="font-bold text-lg">Roberto Silva</h3>
-                    <p class="text-red-600">Reparación de Laptop</p>
-                </div>
-                <p class="text-gray-600 text-center">
-                    "Pensé que tendría que comprar una laptop nueva, pero el equipo de Reppair logró repararla por una fracción del costo. ¡Profesionales y confiables!"
-                </p>
-                <div class="flex justify-center mt-4 text-yellow-400">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                        <i class="fas fa-lightbulb text-3xl text-red-600 mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Innovación</h4>
+                        <p class="text-gray-600">Nos mantenemos a la vanguardia de la tecnología.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Nueva sección: Contacto -->
+    <section id="contacto" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contacto</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Información de Contacto -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="text-2xl text-red-600 mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Dirección</h3>
+                                <p class="text-gray-600">Calle 50, Ciudad de Panamá</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl text-red-600 mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Teléfono</h3>
+                                <p class="text-gray-600">+507 XXXX-XXXX</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl text-red-600 mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Email</h3>
+                                <p class="text-gray-600">info@reppairpanama.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl text-red-600 mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Horario de Atención</h3>
+                                <p class="text-gray-600">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                                <p class="text-gray-600">Sábado: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="mt-8">
+                        <h3 class="font-semibold mb-4">Síguenos en Redes Sociales</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-2xl text-red-600 hover:text-red-700">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-red-600 hover:text-red-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-red-600 hover:text-red-700">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-red-600 hover:text-red-700">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de Contacto -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="email">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add smooth scroll behavior -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</body>
+</html>
