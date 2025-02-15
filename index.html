@@ -1,491 +1,77 @@
-
-<!DOCTYPE html>
-<html lang="es">
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servicio profesional de reparación de consolas, PC, laptops y soporte IT empresarial en Panamá">
-    <title>Reppair Panama - Reparación y Soporte Tecnológico</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
+<!-- Sección de Testimonios -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Lo que dicen nuestros clientes</h2>
         
-        .float-animation {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        .pulse-animation {
-            animation: pulse 2s ease-in-out infinite;
-        }
-    </style>
-</head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-white shadow-md fixed w-full z-10">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold text-gray-800">Reppair Panama</div>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#inicio" class="text-gray-600 hover:text-red-500">Inicio</a>
-                    <a href="#servicios" class="text-gray-600 hover:text-red-500">Servicios</a>
-                    <a href="#planes" class="text-gray-600 hover:text-red-500">Planes IT</a>
-                    <a href="#nosotros" class="text-gray-600 hover:text-red-500">Nosotros</a>
-                    <a href="#contacto" class="text-gray-600 hover:text-red-500">Contacto</a>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonio 1 -->
+            <div class="bg-gray-50 rounded-lg shadow-lg p-8">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-2xl text-white"></i>
+                    </div>
                 </div>
-                <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700" 
-    onclick="window.location.href='https://wa.me/50767315540?text=Hola%20Reppair%20Panama,%20me%20gustaría%20que%20me%20ayuden%20con%20sus%20servicios.'">
-                    Contactar Ahora
-                </button>
+                <div class="text-center mb-4">
+                    <h3 class="font-bold text-lg">Carlos Martínez</h3>
+                    <p class="text-red-600">Reparación de PS5</p>
+                </div>
+                <p class="text-gray-600 text-center">
+                    "Excelente servicio. Repararon mi PS5 en tiempo récord y ahora funciona perfectamente. El servicio al cliente fue excepcional."
+                </p>
+                <div class="flex justify-center mt-4 text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="pt-24 pb-12 bg-gradient-to-r from-red-600 to-red-800">
-        <div class="container mx-auto px-6 py-16 text-center">
-            <img src="images/tech-support.jpg" alt="Tech Support" class="mx-auto mb-8 float-animation">
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
-                Expertos en Reparación Tecnológica
-            </h1>
-            <p class="text-xl text-white mb-8">
-                Tu solución confiable en reparación de consolas, PC, laptops y soporte IT empresarial en Panamá
-            </p>
-            <div class="flex justify-center space-x-4">
-                <button class="bg-white text-red-600 px-8 py-3 rounded-full hover:bg-gray-100">
-                    Ver Servicios
-                </button>
-                <button class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-red-600">
-                    Contactar
-                </button>
+            <!-- Testimonio 2 -->
+            <div class="bg-gray-50 rounded-lg shadow-lg p-8">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-2xl text-white"></i>
+                    </div>
+                </div>
+                <div class="text-center mb-4">
+                    <h3 class="font-bold text-lg">María González</h3>
+                    <p class="text-red-600">Soporte IT Empresarial</p>
+                </div>
+                <p class="text-gray-600 text-center">
+                    "Desde que contratamos sus servicios de soporte IT, nuestra empresa ha mejorado significativamente su eficiencia tecnológica. ¡Altamente recomendados!"
+                </p>
+                <div class="flex justify-center mt-4 text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nuestros Servicios</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Servicio 1: Consolas -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="images/console.jpg" alt="Consolas" class="mx-auto mb-4 pulse-animation">
-                    <div class="text-4xl text-red-600 mb-4">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Reparación de Consolas</h3>
-                    <ul class="text-gray-600 space-y-2 mb-6">
-                        <li>• PlayStation (PS3, PS4, PS5)</li>
-                        <li>• Xbox (360, One, Series)</li>
-                        <li>• Nintendo Switch</li>
-                        <li>• Diagnóstico gratuito</li>
-                    </ul>
-                    <div class="space-y-3">
-                        <button class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
-                            Solicitar Diagnóstico
-                        </button>
-                        <button class="w-full border border-red-600 text-red-600 py-2 rounded-lg hover:bg-red-50">
-                            Ver Lista de Precios
-                        </button>
+            <!-- Testimonio 3 -->
+            <div class="bg-gray-50 rounded-lg shadow-lg p-8">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-2xl text-white"></i>
                     </div>
                 </div>
-
-                <!-- Servicio 2: PC/Laptops -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="images/laptop.jpg" alt="PC/Laptops" class="mx-auto mb-4 float-animation">
-                    <div class="text-4xl text-red-600 mb-4">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Reparación de PC y Laptops</h3>
-                    <ul class="text-gray-600 space-y-2 mb-6">
-                        <li>• Problemas de hardware</li>
-                        <li>• Problemas de software</li>
-                        <li>• Actualización de componentes</li>
-                        <li>• Mantenimiento preventivo</li>
-                    </ul>
-                    <div class="space-y-3">
-                        <button class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
-                            Agendar Revisión
-                        </button>
-                        <button class="w-full border border-red-600 text-red-600 py-2 rounded-lg hover:bg-red-50">
-                            Cotizar Servicio
-                        </button>
-                    </div>
+                <div class="text-center mb-4">
+                    <h3 class="font-bold text-lg">Roberto Silva</h3>
+                    <p class="text-red-600">Reparación de Laptop</p>
                 </div>
-
-                <!-- Servicio 3: Soporte IT -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="images/it-support.jpg" alt="Soporte IT" class="mx-auto mb-4 pulse-animation">
-                    <div class="text-4xl text-red-600 mb-4">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Soporte IT Empresarial</h3>
-                    <ul class="text-gray-600 space-y-2 mb-6">
-                        <li>• Mantenimiento de redes</li>
-                        <li>• Soporte técnico remoto</li>
-                        <li>• Seguridad informática</li>
-                        <li>• Consultoría IT</li>
-                    </ul>
-                    <div class="space-y-3">
-                        <button class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
-                            Ver Planes Mensuales
-                        </button>
-                        <button class="w-full border border-red-600 text-red-600 py-2 rounded-lg hover:bg-red-50">
-                            Solicitar Consulta
-                        </button>
-                    </div>
+                <p class="text-gray-600 text-center">
+                    "Pensé que tendría que comprar una laptop nueva, pero el equipo de Reppair logró repararla por una fracción del costo. ¡Profesionales y confiables!"
+                </p>
+                <div class="flex justify-center mt-4 text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Planes de Soporte IT -->
-    <section id="planes" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Planes de Soporte IT</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Plan Básico -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="p-8">
-                        <img src="images/basic-plan.jpg" alt="Plan Básico" class="mx-auto mb-4 pulse-animation">
-                        <h3 class="text-2xl font-bold text-center mb-4">Reppair Básico</h3>
-                        <div class="text-center text-red-600 text-4xl font-bold mb-6">
-                            $374<span class="text-gray-500 text-lg">/mes</span>
-                        </div>
-                        <ul class="space-y-3 mb-6">
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Soporte remoto 8x5
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Hasta 10 dispositivos
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Mantenimiento preventivo mensual
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Respuesta en 4 horas
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-4 bg-gray-50">
-                        <button class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700">
-                            Contratar Plan Básico
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Plan Intermedio -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform scale-105 border-2 border-red-600">
-                    <div class="bg-red-600 text-white text-center py-2">
-                        <span class="text-sm font-semibold">MÁS POPULAR</span>
-                    </div>
-                    <div class="p-8">
-                        <img src="images/intermediate-plan.jpg" alt="Plan Intermedio" class="mx-auto mb-4 float-animation">
-                        <h3 class="text-2xl font-bold text-center mb-4">Reppair Intermedio</h3>
-                        <div class="text-center text-red-600 text-4xl font-bold mb-6">
-                            $624<span class="text-gray-500 text-lg">/mes</span>
-                        </div>
-                        <ul class="space-y-3 mb-6">
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Soporte remoto 12x6
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Hasta 25 dispositivos
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Mantenimiento preventivo quincenal
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Respuesta en 2 horas
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Seguridad básica incluida
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-4 bg-gray-50">
-                        <button class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700">
-                            Contratar Plan Intermedio
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Plan Extreme -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="p-8">
-                        <img src="images/extreme-plan.jpg" alt="Plan Extreme" class="mx-auto mb-4 pulse-animation">
-                        <h3 class="text-2xl font-bold text-center mb-4">Reppair Extreme</h3>
-                        <div class="text-center text-red-600 text-4xl font-bold mb-6">
-                            $1,124<span class="text-gray-500 text-lg">/mes</span>
-                        </div>
-                        <ul class="space-y-3 mb-6">
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Soporte 24/7
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Dispositivos ilimitados
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Mantenimiento preventivo semanal
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Respuesta inmediata
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Seguridad avanzada incluida
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Consultoría IT mensual
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-4 bg-gray-50">
-                        <button class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700">
-                            Contratar Plan Extreme
-                        </button>
-                    </div>
-                </div>
-            </div>
-</head>
-<body class="bg-gray-50">
-    <!-- Header section updated with smooth scroll -->
-    <header class="bg-white shadow-md fixed w-full z-10">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold text-gray-800">Reppair Panama</div>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#inicio" class="text-gray-600 hover:text-red-500">Inicio</a>
-                    <a href="#servicios" class="text-gray-600 hover:text-red-500">Servicios</a>
-                    <a href="#planes" class="text-gray-600 hover:text-red-500">Planes IT</a>
-                    <a href="#nosotros" class="text-gray-600 hover:text-red-500">Nosotros</a>
-                    <a href="#contacto" class="text-gray-600 hover:text-red-500">Contacto</a>
-                </div>
-                <button class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700" onclick="window.location.href='https://wa.me/+50767315540'">
-                    Contactar Ahora
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Previous sections remain the same: Hero, Servicios, Planes -->
-    
-    <!-- Nueva sección: Nosotros -->
-    <section id="nosotros" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Sobre Nosotros</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Misión -->
-                <div class="bg-gray-50 rounded-lg shadow-lg p-8">
-                    <div class="text-4xl text-red-600 mb-4">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-6">Nuestra Misión</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        En Reppair Panama, nuestra misión es proporcionar soluciones tecnológicas integrales y de alta calidad, 
-                        garantizando la satisfacción de nuestros clientes a través de un servicio profesional, oportuno y 
-                        personalizado.
-                    </p>
-                </div>
-
-                <!-- Visión -->
-                <div class="bg-gray-50 rounded-lg shadow-lg p-8">
-                    <div class="text-4xl text-red-600 mb-4">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-6">Nuestra Visión</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Ser reconocidos como la empresa líder en soluciones tecnológicas en Panamá, destacándonos por 
-                        nuestra excelencia en el servicio, innovación constante y compromiso con el desarrollo tecnológico 
-                        del país.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Valores -->
-            <div class="mt-12">
-                <h3 class="text-2xl font-bold text-center mb-8">Nuestros Valores</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
-                        <i class="fas fa-star text-3xl text-red-600 mb-4"></i>
-                        <h4 class="text-xl font-semibold mb-2">Excelencia</h4>
-                        <p class="text-gray-600">Buscamos la perfección en cada servicio que ofrecemos.</p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
-                        <i class="fas fa-handshake text-3xl text-red-600 mb-4"></i>
-                        <h4 class="text-xl font-semibold mb-2">Integridad</h4>
-                        <p class="text-gray-600">Actuamos con honestidad y transparencia en todo momento.</p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center">
-                        <i class="fas fa-lightbulb text-3xl text-red-600 mb-4"></i>
-                        <h4 class="text-xl font-semibold mb-2">Innovación</h4>
-                        <p class="text-gray-600">Nos mantenemos a la vanguardia de la tecnología.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nueva sección: Contacto -->
-    <section id="contacto" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contacto</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Información de Contacto -->
-                <div class="bg-white rounded-lg shadow-lg p-8">
-                    <div class="space-y-6">
-                        <div class="flex items-center">
-                            <div class="text-2xl text-red-600 mr-4">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Dirección</h3>
-                                <p class="text-gray-600">Calle 70 San Francisco Edif. Venecia, Ciudad de Panamá</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="text-2xl text-red-600 mr-4">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Teléfono</h3>
-                                <p class="text-gray-600">+507 6731-5540</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="text-2xl text-red-600 mr-4">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Email</h3>
-                                <p class="text-gray-600">reppair.asistencia@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="text-2xl text-red-600 mr-4">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Horario de Atención</h3>
-                                <p class="text-gray-600">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
-                                <p class="text-gray-600">Sábado: 9:00 AM - 2:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Redes Sociales -->
-                    <div class="mt-8">
-                        <h3 class="font-semibold mb-4">Síguenos en Redes Sociales</h3>
-                        <div class="flex space-x-4">
-                            </a>
-                            <a href="https://www.instagram.com/reppair_panama/" target="_blank" class="text-2xl text-red-600 hover:text-red-700">
-    <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Formulario de contacto -->
-<form id="contactForm" class="space-y-6">
-    <div>
-        <label class="block text-gray-700 mb-2" for="nombre">Nombre Completo</label>
-        <input type="text" id="nombre" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500">
     </div>
-    <div>
-        <label class="block text-gray-700 mb-2" for="email">Email</label>
-        <input type="email" id="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500">
-    </div>
-    <div>
-        <label class="block text-gray-700 mb-2" for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500">
-    </div>
-    <div>
-        <label class="block text-gray-700 mb-2" for="mensaje">Mensaje</label>
-        <textarea id="mensaje" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"></textarea>
-    </div>
-    <button type="submit" class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">
-        Enviar Mensaje
-    </button>
-</form>
-
-<!-- Agregar EmailJS y Script de envío -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-    (function() {
-        emailjs.init("HNBS_H0eHayuxTfan"); // Reemplaza con tu User ID de EmailJS
-    })();
-
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        // Obtener valores del formulario
-        let nombre = document.getElementById("nombre").value;
-        let email = document.getElementById("email").value;
-        let telefono = document.getElementById("telefono").value;
-        let mensaje = document.getElementById("mensaje").value;
-
-        // Configurar EmailJS
-        let templateParams = {
-            to_email: "reppair.asistencia@gmail.com",
-            from_name: nombre,
-            from_email: email,
-            phone: telefono,
-            message: mensaje
-        };
-
-        // Enviar correo con EmailJS
-        emailjs.send("service_j1opvn9", "template_3tff5tu", templateParams)
-            .then(function(response) {
-                console.log("Correo enviado con éxito", response);
-
-                // 🔹 Enviar notificación por WhatsApp usando CallMeBot API
-                let whatsappMessage = `📩 Nuevo mensaje desde la web:\n\n📛 Nombre: ${nombre}\n📧 Email: ${email}\n📞 Teléfono: ${telefono}\n💬 Mensaje: ${mensaje}`;
-                let apiUrl = `https://api.callmebot.com/whatsapp.php?phone=50767315540&text=${encodeURIComponent(whatsappMessage)}&apikey=7020162`;
-
-                // Hacer la solicitud a la API de CallMeBot
-                fetch(apiUrl)
-                    .then(response => {
-                        if (response.ok) {
-                            console.log("Mensaje de WhatsApp enviado con éxito");
-                        } else {
-                            console.error("Error al enviar el mensaje de WhatsApp");
-                        }
-                    })
-                    .catch(error => console.error("Error en la solicitud de WhatsApp:", error));
-
-                alert("Tu mensaje ha sido enviado con éxito. Te contactaremos pronto.");
-                
-                // Opcional: Limpiar el formulario
-                document.getElementById("contactForm").reset();
-            }, function(error) {
-                console.error("Error al enviar el correo", error);
-                alert("Hubo un problema al enviar tu mensaje, intenta nuevamente.");
-            });
-    });
-</script>
+</section>
